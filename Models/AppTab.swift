@@ -1,11 +1,13 @@
 import Foundation
 
-enum AppTab: String, CaseIterable {
+enum AppTab: String, CaseIterable, Identifiable {
     case home = "Home"
     case efka = "EFKA"
     case vat = "VAT"
     case assets = "Assets"
     case tools = "Tools"
+
+    var id: String { rawValue }
 
     var icon: String {
         switch self {

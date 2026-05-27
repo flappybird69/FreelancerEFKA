@@ -3,6 +3,7 @@ import SwiftUI
 struct InvoiceCalculatorView: View {
     @State private var vm = InvoiceViewModel()
     @State private var amountText: String = "1000"
+    @State private var showPDF = false
 
     var body: some View {
         List {
@@ -85,12 +86,57 @@ struct InvoiceCalculatorView: View {
                 }
                 .listRowBackground(Color.clear)
             }
+
+            Section {
+                HStack(spacing: 16) {
+                    let summary = "Invoice — \(Date().formatted(date: .abbreviated, time: .omitted))\nNet: \(vm.result.netAmount.currencyFormatted)\nVAT: \(vm.result.vatAmount.currencyFormatted)\nGross: \(vm.result.grossAmount.currencyFormatted)\nΦΜΥ: \(vm.result.withholdingTax.currencyFormatted)\nYou Receive: \(vm.result.finalNet.currencyFormatted)"
+                    CopyButton(text: summary)
+                    ShareButton(text: summary) {
+                        HStack(spacing: 4) {
+                            Image(systemName: "square.and.arrow.up").font(.caption)
+                            Text("Share").font(.caption2.weight(.medium))
+                        }
+                        .foregroundColor(.accentPurple)
+                    }
+                    Button { showPDF = true } label: {
+                        HStack(spacing: 4) {
+                            Image(systemName: "doc.richtext").font(.caption)
+                            Text("Export PDF").font(.caption2.weight(.medium))
+                        }
+                        .foregroundColor(.accentPurple)
+                    }
+                    Spacer()
+                }
+                .listRowBackground(Color.clear)
+            }
+
+            Section {
+                CombinedDisclaimer(showFMYCaveat: true)
+                    .listRowBackground(Color.clear)
+            }
         }
         .listStyle(.insetGrouped)
         .scrollContentBackground(.hidden)
         .background(Color(.systemGroupedBackground))
         .navigationTitle("Invoice Calculator")
         .navigationBarTitleDisplayMode(.inline)
+        .sheet(isPresented: $showPDF) {
+            NavigationStack {
+                PDFPreviewView(data: InvoicePDFGenerator.generate(result: vm.result))
+                    .navigationTitle("Invoice PDF")
+                    .navigationBarTitleDisplayMode(.inline)
+                    .toolbar {
+                        ToolbarItem(placement: .confirmationAction) { Button("Done") { showPDF = false } }
+                        ToolbarItem(placement: .bottomBar) {
+                            ShareButton(text: "Invoice PDF") {
+                                Label("Share PDF", systemImage: "square.and.arrow.up")
+                                    .font(.subheadline)
+                                    .foregroundColor(.accentPurple)
+                            }
+                        }
+                    }
+            }
+        }
     }
 }
 

@@ -3,9 +3,28 @@ import SwiftUI
 
 @Observable
 final class InvoiceViewModel {
-    var netAmount: Decimal = 1000
-    var selectedVatIndex: Int = 0
-    var applyWithholding: Bool = true
+    private let defaults = UserDefaults.standard
+
+    var netAmount: Decimal {
+        get { Decimal(defaults.double(forKey: "inv_net")) }
+        set { defaults.set(Double(truncating: newValue as NSDecimalNumber), forKey: "inv_net") }
+    }
+
+    var selectedVatIndex: Int {
+        get { defaults.integer(forKey: "inv_vatIndex") }
+        set { defaults.set(newValue, forKey: "inv_vatIndex") }
+    }
+
+    var applyWithholding: Bool {
+        get { defaults.object(forKey: "inv_withholding") == nil ? true : defaults.bool(forKey: "inv_withholding") }
+        set { defaults.set(newValue, forKey: "inv_withholding") }
+    }
+
+    init() {
+        if defaults.double(forKey: "inv_net") == 0 {
+            defaults.set(1000, forKey: "inv_net")
+        }
+    }
 
     let vatOptions: [(String, Decimal)] = [("24%", 0.24), ("13%", 0.13), ("6%", 0.06), ("Exempt", 0)]
 
@@ -15,10 +34,6 @@ final class InvoiceViewModel {
     }
 
     var result: InvoiceResult {
-        InvoiceCalculator.calculate(
-            netAmount: netAmount,
-            vatRate: selectedVatRate,
-            applyWithholding: applyWithholding
-        )
+        InvoiceCalculator.calculate(netAmount: netAmount, vatRate: selectedVatRate, applyWithholding: applyWithholding)
     }
 }

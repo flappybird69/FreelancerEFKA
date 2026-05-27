@@ -2,6 +2,8 @@ import SwiftUI
 
 struct SettingsView: View {
     @Environment(AppSettings.self) private var settings
+    @State private var notifManager = NotificationManager()
+    @State private var showDeniedAlert = false
 
     var body: some View {
         NavigationStack {
@@ -9,6 +11,7 @@ struct SettingsView: View {
             return List {
                 headerSection
                 themeSection
+                notificationSection
                 aboutSection
             }
             .listStyle(.insetGrouped)
@@ -16,6 +19,17 @@ struct SettingsView: View {
             .background(Color(.systemGroupedBackground))
             .navigationTitle("Settings")
             .navigationBarTitleDisplayMode(.large)
+            .alert("Notifications Blocked", isPresented: $showDeniedAlert) {
+                Button("Open Settings") {
+                    if let url = URL(string: UIApplication.openSettingsURLString) {
+                        UIApplication.shared.open(url)
+                    }
+                }
+                Button("Cancel", role: .cancel) {}
+            } message: {
+                Text("Enable notifications in iOS Settings to receive EFKA/VAT deadline reminders.")
+            }
+            .onAppear { notifManager.checkAuthorization() }
         }
     }
 
@@ -89,6 +103,70 @@ struct SettingsView: View {
         }
     }
 
+    // MARK: - Notifications
+    private var notificationSection: some View {
+        Section {
+            if notifManager.isAuthorized {
+                HStack(spacing: 14) {
+                    ZStack {
+                        Circle().fill(Color.accentTeal.opacity(0.1)).frame(width: 32, height: 32)
+                        Image(systemName: "bell.badge.fill").font(.caption).foregroundColor(.accentTeal)
+                    }
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("Notifications Enabled").font(.body.weight(.medium)).foregroundColor(.primary)
+                        Text("Weekly reminders + EFKA/VAT deadlines").font(.caption).foregroundColor(.secondary)
+                    }
+                }
+            } else {
+                Button {
+                    notifManager.requestPermission()
+                    if !notifManager.isAuthorized && notifManager.showDeniedAlert {
+                        showDeniedAlert = true
+                    }
+                } label: {
+                    HStack(spacing: 14) {
+                        ZStack {
+                            Circle().fill(Color.accentOrange.opacity(0.1)).frame(width: 32, height: 32)
+                            Image(systemName: "bell").font(.caption).foregroundColor(.accentOrange)
+                        }
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text("Enable Notifications").font(.body.weight(.medium)).foregroundColor(.primary)
+                            Text("Get reminders for EFKA, VAT, and tax deadlines").font(.caption).foregroundColor(.secondary)
+                        }
+                        Spacer()
+                        Image(systemName: "chevron.right").font(.caption).foregroundColor(.secondary)
+                    }
+                }
+                .buttonStyle(.plain)
+            }
+
+            if notifManager.isAuthorized {
+                Button {
+                    notifManager.scheduleDeadlines()
+                } label: {
+                    HStack(spacing: 14) {
+                        ZStack {
+                            Circle().fill(Color.accentPurple.opacity(0.1)).frame(width: 32, height: 32)
+                            Image(systemName: "calendar.badge.clock").font(.caption).foregroundColor(.accentPurple)
+                        }
+                        Text("Schedule All Deadline Reminders").font(.body).foregroundColor(.primary)
+                        Spacer()
+                        Image(systemName: "chevron.right").font(.caption).foregroundColor(.secondary)
+                    }
+                }
+                .buttonStyle(.plain)
+            }
+        } header: {
+            HStack(spacing: 6) {
+                Image(systemName: "bell.fill").font(.caption).foregroundColor(.accentPurple)
+                Text("Notifications").font(.headline).foregroundColor(.primary)
+            }
+        } footer: {
+            Text("Weekly reminders + EFKA, VAT, and income tax deadline notifications.")
+                .font(.caption2)
+        }
+    }
+
     // MARK: - About
     private var aboutSection: some View {
         Section {
@@ -106,25 +184,17 @@ struct SettingsView: View {
                 .fixedSize(horizontal: false, vertical: true)
         } header: {
             HStack(spacing: 6) {
-                Image(systemName: "info.circle")
-                    .font(.caption)
-                    .foregroundColor(.accentPurple)
-                Text("About")
-                    .font(.headline)
-                    .foregroundColor(.primary)
+                Image(systemName: "info.circle").font(.caption).foregroundColor(.accentPurple)
+                Text("About").font(.headline).foregroundColor(.primary)
             }
         }
     }
 
     private func aboutRow(_ label: String, _ value: String) -> some View {
         HStack {
-            Text(label)
-                .font(.body)
-                .foregroundColor(.secondary)
+            Text(label).font(.body).foregroundColor(.secondary)
             Spacer()
-            Text(value)
-                .font(.subheadline.weight(.medium))
-                .foregroundColor(.accentPurple)
+            Text(value).font(.subheadline.weight(.medium)).foregroundColor(.accentPurple)
         }
     }
 }

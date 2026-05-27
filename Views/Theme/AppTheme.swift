@@ -89,3 +89,39 @@ struct SectionHeader: View {
         }
     }
 }
+
+// MARK: - Copy & Share
+struct CopyButton: View {
+    let text: String
+    @State private var copied = false
+
+    var body: some View {
+        Button {
+            UIPasteboard.general.string = text
+            withAnimation(.spring(response: 0.3)) { copied = true }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                withAnimation { copied = false }
+            }
+        } label: {
+            HStack(spacing: 4) {
+                Image(systemName: copied ? "checkmark.circle.fill" : "doc.on.doc")
+                    .font(.caption)
+                Text(copied ? "Copied" : "Copy")
+                    .font(.caption2.weight(.medium))
+            }
+            .foregroundColor(copied ? .accentTeal : .accentPurple)
+        }
+        .buttonStyle(.plain)
+    }
+}
+
+struct ShareButton<Label: View>: View {
+    let text: String
+    @ViewBuilder var label: () -> Label
+
+    var body: some View {
+        ShareLink(item: text, preview: SharePreview("Freelancer EFKA", image: Image(systemName: "eurosign.circle.fill"))) {
+            label()
+        }
+    }
+}

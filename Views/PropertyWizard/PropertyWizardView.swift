@@ -133,7 +133,7 @@ struct PropertyWizardView: View {
                 Text("Purchase Cost Calculator").font(.headline).foregroundColor(.primary)
             }
         } footer: {
-            Text("For used homes: ΦΜΑ 3%. For new builds (first sale): VAT 24%. Notary/lawyer fees vary by region and complexity.")
+            Text("For used homes: ΦΜΑ 3%. For new builds (first sale): VAT 24%. Notary/lawyer fees vary by region and complexity. Based on Ν. 1587/1950, Ν. 2830/2000.")
                 .font(.caption2)
         }
     }
@@ -200,15 +200,22 @@ struct PropertyWizardView: View {
 
     // MARK: - Tax Button
     private var taxButton: some View {
-        Section {
-            Button { showTax = true } label: {
-                HStack {
-                    Image(systemName: "doc.text.magnifyingglass").foregroundColor(.accentPurple)
-                    Text("Tax & Fee Reference").font(.body).foregroundColor(.primary)
-                    Spacer()
-                    Text("\(vm.taxReferences.count) items").font(.caption).foregroundColor(.secondary)
-                    Image(systemName: "chevron.right").font(.caption).foregroundColor(.secondary)
+        Group {
+            Section {
+                Button { showTax = true } label: {
+                    HStack {
+                        Image(systemName: "doc.text.magnifyingglass").foregroundColor(.accentPurple)
+                        Text("Tax & Fee Reference").font(.body).foregroundColor(.primary)
+                        Spacer()
+                        Text("\(vm.taxReferences.count) items").font(.caption).foregroundColor(.secondary)
+                        Image(systemName: "chevron.right").font(.caption).foregroundColor(.secondary)
+                    }
                 }
+            }
+
+            Section {
+                CombinedDisclaimer()
+                    .listRowBackground(Color.clear)
             }
         }
     }

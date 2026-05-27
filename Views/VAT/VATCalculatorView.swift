@@ -15,6 +15,7 @@ struct VATCalculatorView: View {
                 monthlySection
                 quarterlySection
                 annualSection
+                copyShareSection
                 legalDisclaimer
             }
             .listStyle(.insetGrouped)
@@ -192,12 +193,29 @@ struct VATCalculatorView: View {
         }
     }
 
+    // MARK: - Copy/Share
+    private var copyShareSection: some View {
+        Section {
+            HStack(spacing: 16) {
+                let summary = "VAT Estimator — \(Date().formatted(date: .abbreviated, time: .omitted))\nNet: \(vm.result.netMonthlyIncome.currencyFormatted)/mo\nVAT Payable: \(vm.result.vatPayableMonthly.currencyFormatted)/mo\nGross to Client: \(vm.result.grossMonthlyIncome.currencyFormatted)/mo\nAnnual Net After All: \(vm.result.netAnnualAfterAll.currencyFormatted)"
+                CopyButton(text: summary)
+                ShareButton(text: summary) {
+                    HStack(spacing: 4) {
+                        Image(systemName: "square.and.arrow.up").font(.caption)
+                        Text("Share").font(.caption2.weight(.medium))
+                    }
+                    .foregroundColor(.accentPurple)
+                }
+                Spacer()
+            }
+            .listRowBackground(Color.clear)
+        }
+    }
+
     // MARK: - Disclaimer
     private var legalDisclaimer: some View {
         Section {
-            Text("Estimates based on AADE ΦΠΑ rates 2025. ±5% margin. Consult your λογιστής for exact obligations.")
-                .font(AppFont.caption2)
-                .foregroundColor(.secondary)
+            CombinedDisclaimer(showLaw5073: true)
                 .listRowBackground(Color.clear)
         }
     }

@@ -14,6 +14,8 @@ struct EFKACalculatorView: View {
                 efkaBreakdown
                 totalBurden
                 annualProjection
+                multiYearSection
+                copyShareSection
                 legalDisclaimer
             }
             .listStyle(.insetGrouped)
@@ -202,14 +204,69 @@ struct EFKACalculatorView: View {
         }
     }
 
+    // MARK: - Copy/Share
+    private var copyShareSection: some View {
+        Section {
+            HStack(spacing: 16) {
+                let summary = summaryText
+                CopyButton(text: summary)
+                ShareButton(text: summary) {
+                    HStack(spacing: 4) {
+                        Image(systemName: "square.and.arrow.up").font(.caption)
+                        Text("Share").font(.caption2.weight(.medium))
+                    }
+                    .foregroundColor(.accentPurple)
+                }
+                Spacer()
+            }
+            .listRowBackground(Color.clear)
+        }
+    }
+
+    // MARK: - Multi-year projection
+    private var multiYearSection: some View {
+        Section {
+            ForEach(vm.multiYearProjection(years: 5), id: \.year) { row in
+                HStack {
+                    Text("Year \(row.year)")
+                        .font(.subheadline.weight(.medium))
+                        .foregroundColor(.primary)
+                    Spacer()
+                    VStack(alignment: .trailing, spacing: 1) {
+                        Text(row.netIncome.currencyFormatted)
+                            .font(.body.monospaced().weight(.semibold))
+                            .foregroundColor(.accentTeal)
+                        Text("EFKA: \(row.efkaPaid.currencyFormatted)")
+                            .font(.caption2.monospaced())
+                            .foregroundColor(.secondary)
+                    }
+                }
+            }
+        } header: {
+            SectionHeader(title: "5-Year Projection", icon: "chart.line.uptrend.xyaxis")
+        } footer: {
+            Text("Years 1–2 use reduced rates. Tax and solidarity included.")
+                .font(.caption2)
+        }
+    }
+
     // MARK: - Disclaimer
     private var legalDisclaimer: some View {
         Section {
-            Text("Estimates based on published 2025 rates. ±5% margin. Income tax uses progressive brackets excluding deductions. Consult your λογιστής.")
-                .font(AppFont.caption2)
-                .foregroundColor(.secondary)
+            CombinedDisclaimer(showProfessionalDiscount: true, showTekmartro: true, showLaw5073: true)
                 .listRowBackground(Color.clear)
         }
+    }
+
+    private var summaryText: String {
+        """
+        EFKA Estimator — \(Date().formatted(date: .abbreviated, time: .omitted))
+        Gross: \(vm.result.grossMonthlyIncome.currencyFormatted)/mo
+        EFKA: \(vm.result.totalMonthlyContribution.currencyFormatted)/mo (\((vm.effectiveRate * 100).formatted(.number.precision(.fractionLength(1))))%)
+        Tax: \(vm.result.estimatedMonthlyIncomeTax.currencyFormatted)/mo
+        Net Pocket: \(vm.result.netAfterAllMonthly.currencyFormatted)/mo
+        Annual Net: \(vm.annualProjection.netAnnual.currencyFormatted)
+        """
     }
 }
 

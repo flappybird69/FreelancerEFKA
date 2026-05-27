@@ -78,6 +78,11 @@ struct EmploymentComparisonView: View {
                 }
                 .listRowBackground(Color.clear)
             }
+
+            Section {
+                CombinedDisclaimer(showTekmartro: true, showLaw5073: true)
+                    .listRowBackground(Color.clear)
+            }
         }
         .listStyle(.insetGrouped)
         .scrollContentBackground(.hidden)

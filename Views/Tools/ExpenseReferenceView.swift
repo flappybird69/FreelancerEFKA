@@ -62,8 +62,13 @@ struct ExpenseReferenceView: View {
             }
 
             Section {
-                Text("Always keep original receipts and invoices (τιμολόγια). AADE requires documentation for all deductions. ±5% margin on interpretations — consult your λογιστής.")
+                Text("Always keep original receipts and invoices (τιμολόγια). AADE requires documentation for all deductions. Based on Ν. 4172/2013, Άρθρο 22–24.")
                     .font(.caption2).foregroundColor(.secondary)
+                    .listRowBackground(Color.clear)
+            }
+
+            Section {
+                CombinedDisclaimer(showLaw5073: true)
                     .listRowBackground(Color.clear)
             }
         }

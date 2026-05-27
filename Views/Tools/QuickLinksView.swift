@@ -81,6 +81,11 @@ struct QuickLinksView: View {
                     .font(.caption2).foregroundColor(.secondary)
                     .listRowBackground(Color.clear)
             }
+
+            Section {
+                CombinedDisclaimer()
+                    .listRowBackground(Color.clear)
+            }
         }
         .listStyle(.insetGrouped)
         .scrollContentBackground(.hidden)

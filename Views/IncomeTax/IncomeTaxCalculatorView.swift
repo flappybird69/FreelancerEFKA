@@ -111,8 +111,7 @@ struct IncomeTaxCalculatorView: View {
             }
 
             Section {
-                Text("Based on Ν. 4172/2013 progressive scale. Solidarity contribution applies above €30,000. Does not include special deductions or tax credits.")
-                    .font(.caption2).foregroundColor(.secondary)
+                CombinedDisclaimer(showTekmartro: true, showLaw5073: true)
                     .listRowBackground(Color.clear)
             }
         }

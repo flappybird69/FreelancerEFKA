@@ -27,13 +27,16 @@ enum ThemeMode: String, CaseIterable, Identifiable {
 @Observable
 final class AppSettings {
     var themeMode: ThemeMode {
-        didSet {
-            UserDefaults.standard.set(themeMode.rawValue, forKey: "themeMode")
-        }
+        didSet { UserDefaults.standard.set(themeMode.rawValue, forKey: "themeMode") }
+    }
+
+    var hasSeenOnboarding: Bool {
+        didSet { UserDefaults.standard.set(hasSeenOnboarding, forKey: "hasSeenOnboarding") }
     }
 
     init() {
         let raw = UserDefaults.standard.string(forKey: "themeMode") ?? ThemeMode.system.rawValue
         themeMode = ThemeMode(rawValue: raw) ?? .system
+        hasSeenOnboarding = UserDefaults.standard.bool(forKey: "hasSeenOnboarding")
     }
 }

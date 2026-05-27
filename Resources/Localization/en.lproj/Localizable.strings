@@ -1,0 +1,240 @@
+/* Tab Bar */
+"Home" = "Home";
+"EFKA" = "EFKA";
+"VAT" = "VAT";
+"Assets" = "Assets";
+"Tools" = "Tools";
+
+/* Onboarding */
+"Your Freelance Financial Companion" = "Your Freelance Financial Companion";
+"EFKA · VAT · Property Guide" = "EFKA · VAT · Property Guide";
+"EFKA Calculator" = "EFKA Calculator";
+"Calculate your social security contributions, income tax, and net income as a μπλοκάκι worker." = "Calculate your social security contributions, income tax, and net income as a μπλοκάκι worker.";
+"VAT & Invoices" = "VAT & Invoices";
+"Estimate VAT obligations, calculate invoices with ΦΜΥ withholding, and track filing deadlines." = "Estimate VAT obligations, calculate invoices with ΦΜΥ withholding, and track filing deadlines.";
+"Property Guide" = "Property Guide";
+"8-step property purchase wizard with cost calculator, checklists, and tax references." = "8-step property purchase wizard with cost calculator, checklists, and tax references.";
+"Financial Tools" = "Financial Tools";
+"Income tax calculator, expense reference, employment comparison, and government links." = "Income tax calculator, expense reference, employment comparison, and government links.";
+"Continue" = "Continue";
+"Get Started" = "Get Started";
+"Skip" = "Skip";
+"Powered by Sephiance Inc." = "Powered by Sephiance Inc.";
+
+/* Home View */
+"Good morning ☀️" = "Good morning ☀️";
+"Good afternoon 🌤" = "Good afternoon 🌤";
+"Good evening 🌅" = "Good evening 🌅";
+"Good night 🌙" = "Good night 🌙";
+"Here's your financial overview" = "Here's your financial overview";
+"EFKA Rate" = "EFKA Rate";
+"Quick Tools" = "Quick Tools";
+"Social security" = "Social security";
+"ΦΠA obligations" = "ΦΠA obligations";
+"Purchase guide" = "Purchase guide";
+"All calculators" = "All calculators";
+"All estimates based on 2025 published rates" = "All estimates based on 2025 published rates";
+"±5% margin · Consult your λογιστής" = "±5% margin · Consult your λογιστής";
+
+/* EFKA Calculator */
+"EFKA Estimator" = "EFKA Estimator";
+"Social Security Estimator" = "Social Security Estimator";
+"Μπλοκάκι worker · 2025 rates" = "Μπλοκάκι worker · 2025 rates";
+"Monthly Income" = "Monthly Income";
+"gross" = "gross";
+"Gross monthly income" = "Gross monthly income";
+"Years registered" = "Years registered";
+"Insurance class" = "Insurance class";
+"year" = "year";
+"years" = "years";
+"Reduced" = "Reduced";
+"rate — year" = "rate — year";
+"EFKA Contributions" = "EFKA Contributions";
+"monthly" = "monthly";
+"Gross Income" = "Gross Income";
+"Main Pension" = "Main Pension";
+"Health Contribution" = "Health Contribution";
+"Total EFKA" = "Total EFKA";
+"After EFKA" = "After EFKA";
+"Contribution basis" = "Contribution basis";
+"Total Monthly Burden" = "Total Monthly Burden";
+"Income Tax (progressive)" = "Income Tax (progressive)";
+"Solidarity Contribution" = "Solidarity Contribution";
+"Business Tax" = "Business Tax";
+"Total Deductions" = "Total Deductions";
+"Net Pocket Income" = "Net Pocket Income";
+"Annual Projection" = "Annual Projection";
+"EFKA (12×)" = "EFKA (12×)";
+"Business Tax (year)" = "Business Tax (year)";
+"Income Tax (est.)" = "Income Tax (est.)";
+"Solidarity (est.)" = "Solidarity (est.)";
+"Net Annual" = "Net Annual";
+"Effective total rate" = "Effective total rate";
+"5-Year Projection" = "5-Year Projection";
+"Years 1–2 use reduced rates. Tax and solidarity included." = "Years 1–2 use reduced rates. Tax and solidarity included.";
+"Auto-Class" = "Auto-Class";
+
+/* VAT Calculator */
+"VAT Calculator" = "VAT Calculator";
+"ΦΠΑ Calculator" = "ΦΠΑ Calculator";
+"VAT for μπλοκάκι freelancers · 2025" = "VAT for μπλοκάκι freelancers · 2025";
+"Income & Expenses" = "Income & Expenses";
+"Net monthly income" = "Net monthly income";
+"Monthly expenses (with VAT)" = "Monthly expenses (with VAT)";
+"Aegean Island –30%" = "Aegean Island –30%";
+"VAT Rate" = "VAT Rate";
+"Monthly VAT" = "Monthly VAT";
+"VAT Charged" = "VAT Charged";
+"VAT Deductible" = "VAT Deductible";
+"VAT Payable" = "VAT Payable";
+"Gross to Client" = "Gross to Client";
+"Quarterly Filing" = "Quarterly Filing";
+"Quarterly VAT Due" = "Quarterly VAT Due";
+"Filing frequency" = "Filing frequency";
+"None" = "None";
+"Quarterly" = "Quarterly";
+"Monthly" = "Monthly";
+"Projected Turnover" = "Projected Turnover";
+"Annual VAT" = "Annual VAT";
+"Net After All" = "Net After All";
+"VAT Categories" = "VAT Categories";
+"Rate" = "Rate";
+"Under" = "Under";
+"VAT exempt" = "VAT exempt";
+
+/* Invoice Calculator */
+"Invoice Calculator" = "Invoice Calculator";
+"Μπλοκάκι Invoice Calculator" = "Μπλοκάκι Invoice Calculator";
+"Calculate what to charge your client" = "Calculate what to charge your client";
+"Invoice Details" = "Invoice Details";
+"Net amount" = "Net amount";
+"Withholding Tax (ΦΜΥ 20%)" = "Withholding Tax (ΦΜΥ 20%)";
+"Invoice Breakdown" = "Invoice Breakdown";
+"Net Amount" = "Net Amount";
+"Client Pays (Gross)" = "Client Pays (Gross)";
+"You Receive (Net)" = "You Receive (Net)";
+"Export PDF" = "Export PDF";
+"Invoice PDF" = "Invoice PDF";
+"Share PDF" = "Share PDF";
+
+/* Income Tax */
+"Income Tax" = "Income Tax";
+"Income Tax Calculator" = "Income Tax Calculator";
+"2025 progressive scale · 9%–44%" = "2025 progressive scale · 9%–44%";
+"Annual Income" = "Annual Income";
+"Annual gross income" = "Annual gross income";
+"Deductible expenses" = "Deductible expenses";
+"Tax Calculation" = "Tax Calculation";
+"Taxable Income" = "Taxable Income";
+"Total Income Tax" = "Total Income Tax";
+"Effective Rate" = "Effective Rate";
+"Net Annual Income" = "Net Annual Income";
+"Net Monthly" = "Net Monthly";
+
+/* Property Wizard */
+"Property Wizard" = "Property Wizard";
+"Property Purchase Guide" = "Property Purchase Guide";
+"Buying property in Greece · 8 steps" = "Buying property in Greece · 8 steps";
+"All steps complete!" = "All steps complete!";
+"Purchase Cost Calculator" = "Purchase Cost Calculator";
+"Property value" = "Property value";
+"New build (VAT 24% instead of ΦΜΑ)" = "New build (VAT 24% instead of ΦΜΑ)";
+"Total Costs" = "Total Costs";
+"Grand Total (property + costs)" = "Grand Total (property + costs)";
+"Your Progress" = "Your Progress";
+"Progress" = "Progress";
+"Next:" = "Next:";
+"Steps" = "Steps";
+"Tax & Fee Reference" = "Tax & Fee Reference";
+"items" = "items";
+"Reset Progress?" = "Reset Progress?";
+"This will mark all steps as incomplete." = "This will mark all steps as incomplete.";
+"Reset" = "Reset";
+"Cancel" = "Cancel";
+"Mark Complete" = "Mark Complete";
+"Mark Incomplete" = "Mark Incomplete";
+
+/* Step Card */
+"Cost Breakdown" = "Cost Breakdown";
+"Professionals" = "Professionals";
+"Duration:" = "Duration:";
+"Checklist" = "Checklist";
+"Tips" = "Tips";
+"Legal References" = "Legal References";
+"more" = "more";
+
+/* Tools */
+"Tools" = "Tools";
+"Income Tax Calculator" = "Income Tax Calculator";
+"Progressive brackets 9–44%" = "Progressive brackets 9–44%";
+"Invoice Calculator" = "Invoice Calculator";
+"Net → gross with VAT & ΦΜΥ" = "Net → gross with VAT & ΦΜΥ";
+"Tax Deadlines" = "Tax Deadlines";
+"EFKA, VAT, income tax dates" = "EFKA, VAT, income tax dates";
+"Quick Links" = "Quick Links";
+"AADE, EFKA, gov.gr portals" = "AADE, EFKA, gov.gr portals";
+"Expense Reference" = "Expense Reference";
+"Deductible categories & caps" = "Deductible categories & caps";
+"Employment Comparison" = "Employment Comparison";
+"Μπλοκάκι vs Employee vs Company" = "Μπλοκάκι vs Employee vs Company";
+"Settings" = "Settings";
+"Theme & about" = "Theme & about";
+
+/* Settings */
+"Appearance" = "Appearance";
+"Notifications" = "Notifications";
+"Enable Notifications" = "Enable Notifications";
+"Get reminders for EFKA, VAT, and tax deadlines" = "Get reminders for EFKA, VAT, and tax deadlines";
+"Notifications Enabled" = "Notifications Enabled";
+"Weekly reminders + EFKA/VAT deadlines" = "Weekly reminders + EFKA/VAT deadlines";
+"Schedule All Deadline Reminders" = "Schedule All Deadline Reminders";
+"Notifications Blocked" = "Notifications Blocked";
+"Open Settings" = "Open Settings";
+"About" = "About";
+"EFKA Rates" = "EFKA Rates";
+"VAT Rates" = "VAT Rates";
+"Margin" = "Margin";
+
+/* Employment Comparison */
+"Comparison" = "Comparison";
+"Employment Comparison" = "Employment Comparison";
+"Μπλοκάκι vs Employee vs Company (ΙΚΕ)" = "Μπλοκάκι vs Employee vs Company (ΙΚΕ)";
+"Gross monthly income" = "Gross monthly income";
+"Μπλοκάκι" = "Μπλοκάκι";
+"Employee" = "Employee";
+"Company (ΙΚΕ)" = "Company (ΙΚΕ)";
+"Annual Gross" = "Annual Gross";
+"Employer Cost" = "Employer Cost";
+"EFKA" = "EFKA";
+"Taxes" = "Taxes";
+"Net Annual" = "Net Annual";
+"Assumptions" = "Assumptions";
+
+/* Tax Deadlines */
+"Deadlines" = "Deadlines";
+"Tax & EFKA Deadlines" = "Tax & EFKA Deadlines";
+"Never miss a deadline" = "Never miss a deadline";
+
+/* Quick Links */
+"One-tap access to government portals" = "One-tap access to government portals";
+
+/* Expense Reference */
+"Deductible Expenses" = "Deductible Expenses";
+"What you can write off · N. 4172/2013" = "What you can write off · N. 4172/2013";
+"Cap:" = "Cap:";
+"Ref:" = "Ref:";
+
+/* Disclaimers */
+"Rates as of January 2025" = "Rates as of January 2025";
+"Not affiliated with EFKA or AADE. Estimates only — always verify with your λογιστής." = "Not affiliated with EFKA or AADE. Estimates only — always verify with your λογιστής.";
+"Copy" = "Copy";
+"Copied" = "Copied";
+"Share" = "Share";
+
+/* Common */
+"Done" = "Done";
+"Info" = "Info";
+"Category" = "Category";
+"English" = "English";
+"Applies" = "Applies";
+"Paid by" = "Paid by";

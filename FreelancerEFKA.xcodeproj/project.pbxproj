@@ -27,6 +27,7 @@
 		5B3CF04387F300EFD31408AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460194EE00BA830ECDDD1AF4 /* ContentView.swift */; };
 		5B9AF01E2399D4A9F74E32A6 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF16D402403A0B0E37DB86FE /* AppSettings.swift */; };
 		5C168DFEB63F2AA5E58B440E /* PropertyStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5703B8C3ABD8EBDED476500 /* PropertyStep.swift */; };
+		6221DB9FE580026838B41972 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 133A822E594127B6D9E11EFF /* Localizable.strings */; };
 		64AE24320F81D70ABD5367C1 /* PropertyCostCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EDE74D641A81F3573B321A /* PropertyCostCalculator.swift */; };
 		6508C5D40E86F7224C4B81F4 /* EFKACalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749FF3C17CEE44FA6DD54723 /* EFKACalculatorView.swift */; };
 		6989B3CC87D8B23DAA0D341D /* QuickLinksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06F58C38153F18C5CDC1ABE /* QuickLinksView.swift */; };
@@ -65,6 +66,7 @@
 		5302730D1D4F5DDE8597E698 /* IncomeTaxCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeTaxCalculator.swift; sourceTree = "<group>"; };
 		586FBAE973F4D35345F9F9BE /* StepCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCardView.swift; sourceTree = "<group>"; };
 		5942E4CDE14F9C4F7781DC4B /* InvoiceCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceCalculatorView.swift; sourceTree = "<group>"; };
+		5A41E529A45FDA3C0E811D1F /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6B9F7908F09489921A051460 /* TaxDeadlinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxDeadlinesView.swift; sourceTree = "<group>"; };
 		70BE27C9F1760031B780DDF6 /* PropertyWizardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWizardViewModel.swift; sourceTree = "<group>"; };
 		72EB3229BA7B9543F74344C3 /* ToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsView.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 		8069D0C9E32F7F5A1A3440EE /* VATCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VATCalculatorView.swift; sourceTree = "<group>"; };
 		8166FB200EAEB4F0955182AE /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 		86CF7561AD464141383E1CDC /* FreelancerEFKA.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = FreelancerEFKA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B08AE19063F0F371EF206D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A2A1E797B202B3FBA74BCB86 /* FreelancerEFKAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreelancerEFKAApp.swift; sourceTree = "<group>"; };
 		AE44B5FEBFC87239EBBF546B /* InvoiceCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceCalculator.swift; sourceTree = "<group>"; };
 		B5703B8C3ABD8EBDED476500 /* PropertyStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyStep.swift; sourceTree = "<group>"; };
@@ -89,6 +92,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		1C364CF36B82B8DD14AF9B63 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				133A822E594127B6D9E11EFF /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 		2378891142E9F90993D3C11C /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +253,7 @@
 			children = (
 				F96EC1A6B3E60EC5C2A6040C /* Assets.xcassets */,
 				310BB7D90222AE54EB129830 /* Info.plist */,
+				1C364CF36B82B8DD14AF9B63 /* Localization */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -286,6 +298,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				Base,
+				el,
 				en,
 			);
 			mainGroup = 4AC892DA08215BB2A3ED847A;
@@ -306,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75F3B73CE5925586BC133B28 /* Assets.xcassets in Resources */,
+				6221DB9FE580026838B41972 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +370,18 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		133A822E594127B6D9E11EFF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A41E529A45FDA3C0E811D1F /* el */,
+				8B08AE19063F0F371EF206D3 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		077A8646FFC584BD7D17C659 /* Debug */ = {

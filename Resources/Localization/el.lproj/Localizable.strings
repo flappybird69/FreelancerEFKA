@@ -1,0 +1,237 @@
+/* Tab Bar */
+"Home" = "Αρχική";
+"EFKA" = "ΕΦΚΑ";
+"VAT" = "ΦΠΑ";
+"Assets" = "Ακίνητα";
+"Tools" = "Εργαλεία";
+
+/* Onboarding */
+"Your Freelance Financial Companion" = "Ο Οικονομικός Σου Σύντροφος";
+"EFKA · VAT · Property Guide" = "ΕΦΚΑ · ΦΠΑ · Οδηγός Ακινήτων";
+"EFKA Calculator" = "Υπολογιστής ΕΦΚΑ";
+"Calculate your social security contributions, income tax, and net income as a μπλοκάκι worker." = "Υπολόγισε τις ασφαλιστικές σου εισφορές, τον φόρο εισοδήματος και το καθαρό σου εισόδημα ως μπλοκάκι.";
+"VAT & Invoices" = "ΦΠΑ & Τιμολόγια";
+"Estimate VAT obligations, calculate invoices with ΦΜΥ withholding, and track filing deadlines." = "Εκτίμησε τις υποχρεώσεις ΦΠΑ, υπολόγισε τιμολόγια με ΦΜΥ και παρακολούθησε τις προθεσμίες.";
+"Property Guide" = "Οδηγός Ακινήτων";
+"8-step property purchase wizard with cost calculator, checklists, and tax references." = "Οδηγός 8 βημάτων για αγορά ακινήτου με υπολογιστή κόστους, λίστες ελέγχου και φορολογικές αναφορές.";
+"Financial Tools" = "Οικονομικά Εργαλεία";
+"Income tax calculator, expense reference, employment comparison, and government links." = "Υπολογιστής φόρου εισοδήματος, αναφορά εξόδων, σύγκριση απασχόλησης και σύνδεσμοι κυβέρνησης.";
+"Continue" = "Συνέχεια";
+"Get Started" = "Ξεκίνα";
+"Skip" = "Παράλειψη";
+"Powered by Sephiance Inc." = "Powered by Sephiance Inc.";
+
+/* Home View */
+"Good morning ☀️" = "Καλημέρα ☀️";
+"Good afternoon 🌤" = "Καλησπέρα 🌤";
+"Good evening 🌅" = "Καλησπέρα 🌅";
+"Good night 🌙" = "Καληνύχτα 🌙";
+"Here's your financial overview" = "Η οικονομική σου επισκόπηση";
+"EFKA Rate" = "ΕΦΚΑ";
+"Quick Tools" = "Γρήγορα Εργαλεία";
+"Social security" = "Κοινωνική ασφάλιση";
+"ΦΠA obligations" = "Υποχρεώσεις ΦΠΑ";
+"Purchase guide" = "Οδηγός αγοράς";
+"All calculators" = "Όλοι οι υπολογιστές";
+"All estimates based on 2025 published rates" = "Όλες οι εκτιμήσεις βάσει δημοσιευμένων τιμών 2025";
+"±5% margin · Consult your λογιστής" = "±5% περιθώριο · Συμβουλευτείτε τον λογιστή σας";
+
+/* EFKA Calculator */
+"EFKA Estimator" = "Εκτιμητής ΕΦΚΑ";
+"Social Security Estimator" = "Εκτιμητής Κοινωνικής Ασφάλισης";
+"Μπλοκάκι worker · 2025 rates" = "Μπλοκάκι · Τιμές 2025";
+"Monthly Income" = "Μηνιαίο Εισόδημα";
+"gross" = "μικτό";
+"Gross monthly income" = "Μικτό μηνιαίο εισόδημα";
+"Years registered" = "Χρόνια εγγεγραμμένος";
+"Insurance class" = "Ασφαλιστική κλάση";
+"year" = "χρόνο";
+"years" = "χρόνια";
+"Reduced" = "Μειωμένο";
+"rate — year" = "ποσοστό — έτος";
+"EFKA Contributions" = "Εισφορές ΕΦΚΑ";
+"monthly" = "μηνιαία";
+"Gross Income" = "Μικτό Εισόδημα";
+"Main Pension" = "Κύρια Σύνταξη";
+"Health Contribution" = "Εισφορά Υγείας";
+"Total EFKA" = "Σύνολο ΕΦΚΑ";
+"After EFKA" = "Μετά ΕΦΚΑ";
+"Contribution basis" = "Βάση εισφοράς";
+"Total Monthly Burden" = "Συνολικό Μηνιαίο Βάρος";
+"Income Tax (progressive)" = "Φόρος Εισοδήματος (κλιμακωτός)";
+"Solidarity Contribution" = "Εισφορά Αλληλεγγύης";
+"Business Tax" = "Τέλος Επιτηδεύματος";
+"Total Deductions" = "Συνολικές Παρακρατήσεις";
+"Net Pocket Income" = "Καθαρό Εισόδημα";
+"Annual Projection" = "Ετήσια Εκτίμηση";
+"EFKA (12×)" = "ΕΦΚΑ (12×)";
+"Business Tax (year)" = "Τέλος Επιτηδεύματος (έτος)";
+"Income Tax (est.)" = "Φόρος Εισοδήματος (εκτ.)";
+"Solidarity (est.)" = "Αλληλεγγύη (εκτ.)";
+"Net Annual" = "Καθαρό Ετήσιο";
+"Effective total rate" = "Πραγματικό συνολικό ποσοστό";
+"5-Year Projection" = "Εκτίμηση 5 Ετών";
+"Years 1–2 use reduced rates. Tax and solidarity included." = "Τα έτη 1–2 ισχύουν μειωμένα ποσοστά. Φόρος και αλληλεγγύη συμπεριλαμβάνονται.";
+"Auto-Class" = "Αυτόματη Κλάση";
+
+/* VAT Calculator */
+"VAT Calculator" = "Υπολογιστής ΦΠΑ";
+"ΦΠΑ Calculator" = "Υπολογιστής ΦΠΑ";
+"VAT for μπλοκάκι freelancers · 2025" = "ΦΠΑ για μπλοκάκι · 2025";
+"Income & Expenses" = "Εισόδημα & Έξοδα";
+"Net monthly income" = "Καθαρό μηνιαίο εισόδημα";
+"Monthly expenses (with VAT)" = "Μηνιαία έξοδα (με ΦΠΑ)";
+"Aegean Island –30%" = "Νησιωτική Έκπτωση –30%";
+"VAT Rate" = "Ποσοστό ΦΠΑ";
+"Monthly VAT" = "Μηνιαίος ΦΠΑ";
+"VAT Charged" = "ΦΠΑ που χρεώνεται";
+"VAT Deductible" = "ΦΠΑ εκπιπτόμενος";
+"VAT Payable" = "ΦΠΑ πληρωτέος";
+"Gross to Client" = "Μικτό προς πελάτη";
+"Quarterly Filing" = "Τριμηνιαία Υποβολή";
+"Quarterly VAT Due" = "Τριμηνιαίος ΦΠΑ";
+"Filing frequency" = "Συχνότητα υποβολής";
+"None" = "Κανένα";
+"Quarterly" = "Τριμηνιαία";
+"Monthly" = "Μηνιαία";
+"Projected Turnover" = "Εκτιμώμενος Τζίρος";
+"Annual VAT" = "Ετήσιος ΦΠΑ";
+"Net After All" = "Καθαρό μετά όλα";
+"VAT Categories" = "Κατηγορίες ΦΠΑ";
+"Rate" = "Ποσοστό";
+"Under" = "Κάτω από";
+"VAT exempt" = "Απαλλαγή ΦΠΑ";
+
+/* Invoice Calculator */
+"Invoice Calculator" = "Υπολογιστής Τιμολογίων";
+"Μπλοκάκι Invoice Calculator" = "Υπολογιστής Τιμολογίων Μπλοκάκι";
+"Calculate what to charge your client" = "Υπολόγισε τι να χρεώσεις τον πελάτη σου";
+"Invoice Details" = "Στοιχεία Τιμολογίου";
+"Net amount" = "Καθαρό ποσό";
+"Withholding Tax (ΦΜΥ 20%)" = "Φόρος Παρακράτησης (ΦΜΥ 20%)";
+"Invoice Breakdown" = "Αναλυτικό Τιμολογίου";
+"Net Amount" = "Καθαρό Ποσό";
+"Client Pays (Gross)" = "Πελάτης Πληρώνει (Μικτό)";
+"You Receive (Net)" = "Λαμβάνεις (Καθαρό)";
+"Export PDF" = "Εξαγωγή PDF";
+"Invoice PDF" = "Τιμολόγιο PDF";
+"Share PDF" = "Κοινοποίηση PDF";
+
+/* Income Tax */
+"Income Tax" = "Φόρος Εισοδήματος";
+"Income Tax Calculator" = "Υπολογιστής Φόρου Εισοδήματος";
+"2025 progressive scale · 9%–44%" = "Κλιμακωτή κλίμακα 2025 · 9%–44%";
+"Annual Income" = "Ετήσιο Εισόδημα";
+"Annual gross income" = "Ετήσιο μικτό εισόδημα";
+"Deductible expenses" = "Εκπιπτόμενα έξοδα";
+"Tax Calculation" = "Υπολογισμός Φόρου";
+"Taxable Income" = "Φορολογητέο Εισόδημα";
+"Total Income Tax" = "Συνολικός Φόρος Εισοδήματος";
+"Effective Rate" = "Πραγματικό Ποσοστό";
+"Net Annual Income" = "Καθαρό Ετήσιο Εισόδημα";
+"Net Monthly" = "Καθαρό Μηνιαίο";
+
+/* Property Wizard */
+"Property Wizard" = "Οδηγός Ακινήτων";
+"Property Purchase Guide" = "Οδηγός Αγοράς Ακινήτου";
+"Buying property in Greece · 8 steps" = "Αγορά ακινήτου στην Ελλάδα · 8 βήματα";
+"All steps complete!" = "Όλα τα βήματα ολοκληρώθηκαν!";
+"Purchase Cost Calculator" = "Υπολογιστής Κόστους Αγοράς";
+"Property value" = "Αξία ακινήτου";
+"New build (VAT 24% instead of ΦΜΑ)" = "Νεόδμητο (ΦΠΑ 24% αντί ΦΜΑ)";
+"Total Costs" = "Συνολικό Κόστος";
+"Grand Total (property + costs)" = "Γενικό Σύνολο (ακίνητο + κόστη)";
+"Your Progress" = "Η Πρόοδός Σου";
+"Progress" = "Πρόοδος";
+"Next:" = "Επόμενο:";
+"Steps" = "Βήματα";
+"Tax & Fee Reference" = "Αναφορά Φόρων & Τελών";
+"items" = "στοιχεία";
+"Reset Progress?" = "Επαναφορά Προόδου";
+"This will mark all steps as incomplete." = "Αυτό θα επαναφέρει όλα τα βήματα ως μη ολοκληρωμένα.";
+"Reset" = "Επαναφορά";
+"Cancel" = "Ακύρωση";
+"Mark Complete" = "Ολοκλήρωση";
+"Mark Incomplete" = "Αναίρεση Ολοκλήρωσης";
+
+/* Step Card */
+"Cost Breakdown" = "Ανάλυση Κόστους";
+"Professionals" = "Επαγγελματίες";
+"Duration:" = "Διάρκεια:";
+"Checklist" = "Λίστα Ελέγχου";
+"Tips" = "Συμβουλές";
+"Legal References" = "Νομικές Αναφορές";
+"more" = "περισσότερα";
+
+/* Tools */
+"Income Tax Calculator" = "Υπολογιστής Φόρου Εισοδήματος";
+"Progressive brackets 9–44%" = "Κλιμακωτές κλίμακες 9–44%";
+"Invoice Calculator" = "Υπολογιστής Τιμολογίων";
+"Net → gross with VAT & ΦΜΥ" = "Καθαρό → μικτό με ΦΠΑ & ΦΜΥ";
+"Tax Deadlines" = "Φορολογικές Προθεσμίες";
+"EFKA, VAT, income tax dates" = "ΕΦΚΑ, ΦΠΑ, φόρος εισοδήματος";
+"Quick Links" = "Γρήγοροι Σύνδεσμοι";
+"AADE, EFKA, gov.gr portals" = "ΑΑΔΕ, ΕΦΚΑ, gov.gr";
+"Expense Reference" = "Αναφορά Εξόδων";
+"Deductible categories & caps" = "Εκπιπτόμενες κατηγορίες & όρια";
+"Employment Comparison" = "Σύγκριση Απασχόλησης";
+"Μπλοκάκι vs Employee vs Company" = "Μπλοκάκι vs Μισθωτός vs Εταιρεία";
+"Theme & about" = "Θέμα & σχετικά";
+
+/* Settings */
+"Appearance" = "Εμφάνιση";
+"Notifications" = "Ειδοποιήσεις";
+"Enable Notifications" = "Ενεργοποίηση Ειδοποιήσεων";
+"Get reminders for EFKA, VAT, and tax deadlines" = "Λήψη υπενθυμίσεων για ΕΦΚΑ, ΦΠΑ και φορολογικές προθεσμίες";
+"Notifications Enabled" = "Ειδοποιήσεις Ενεργές";
+"Weekly reminders + EFKA/VAT deadlines" = "Εβδομαδιαίες υπενθυμίσεις + προθεσμίες ΕΦΚΑ/ΦΠΑ";
+"Schedule All Deadline Reminders" = "Προγραμματισμός Υπενθυμίσεων";
+"Notifications Blocked" = "Ειδοποιήσεις Αποκλεισμένες";
+"Open Settings" = "Άνοιγμα Ρυθμίσεων";
+"About" = "Σχετικά";
+"EFKA Rates" = "Τιμές ΕΦΚΑ";
+"VAT Rates" = "Τιμές ΦΠΑ";
+"Margin" = "Περιθώριο";
+
+/* Employment Comparison */
+"Comparison" = "Σύγκριση";
+"Employment Comparison" = "Σύγκριση Απασχόλησης";
+"Μπλοκάκι vs Employee vs Company (ΙΚΕ)" = "Μπλοκάκι vs Μισθωτός vs Εταιρεία (ΙΚΕ)";
+"Gross monthly income" = "Μικτό μηνιαίο εισόδημα";
+"Employee" = "Μισθωτός";
+"Company (ΙΚΕ)" = "Εταιρεία (ΙΚΕ)";
+"Annual Gross" = "Ετήσιο Μικτό";
+"Employer Cost" = "Κόστος Εργοδότη";
+"EFKA" = "ΕΦΚΑ";
+"Taxes" = "Φόροι";
+"Net Annual" = "Καθαρό Ετήσιο";
+"Assumptions" = "Υποθέσεις";
+
+/* Tax Deadlines */
+"Deadlines" = "Προθεσμίες";
+"Tax & EFKA Deadlines" = "Φορολογικές & ΕΦΚΑ Προθεσμίες";
+"Never miss a deadline" = "Μην χάνετε ποτέ μια προθεσμία";
+
+/* Quick Links */
+"One-tap access to government portals" = "Πρόσβαση με ένα πάτημα σε κυβερνητικές πύλες";
+
+/* Expense Reference */
+"Deductible Expenses" = "Εκπιπτόμενα Έξοδα";
+"What you can write off · N. 4172/2013" = "Τι μπορείτε να εκπέσετε · Ν. 4172/2013";
+"Cap:" = "Όριο:";
+"Ref:" = "Αναφ.:";
+
+/* Disclaimers */
+"Rates as of January 2025" = "Τιμές από Ιανουάριο 2025";
+"Not affiliated with EFKA or AADE. Estimates only — always verify with your λογιστής." = "Δεν σχετίζεται με ΕΦΚΑ ή ΑΑΔΕ. Εκτιμήσεις μόνο — πάντα επιβεβαιώστε με τον λογιστή σας.";
+"Copy" = "Αντιγραφή";
+"Copied" = "Αντιγράφηκε";
+"Share" = "Κοινοποίηση";
+
+/* Common */
+"Done" = "Ολοκλήρωση";
+"Info" = "Πληροφορίες";
+"Category" = "Κατηγορία";
+"English" = "Αγγλικά";
+"Applies" = "Ισχύει";
+"Paid by" = "Πληρώνει";

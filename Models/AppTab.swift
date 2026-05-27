@@ -9,6 +9,10 @@ enum AppTab: String, CaseIterable, Identifiable {
 
     var id: String { rawValue }
 
+    var localizedLabel: String {
+        String(localized: String.LocalizationValue(rawValue))
+    }
+
     var icon: String {
         switch self {
         case .home: "house"

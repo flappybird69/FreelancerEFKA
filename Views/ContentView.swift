@@ -22,7 +22,7 @@ struct ContentView: View {
             ForEach(AppTab.allCases, id: \.self) { tab in
                 tabContent(for: tab)
                     .tabItem {
-                        Label(tab.rawValue,
+                        Label(tab.localizedLabel,
                               systemImage: selectedTab == tab ? tab.activeIcon : tab.icon)
                     }
                     .tag(tab)

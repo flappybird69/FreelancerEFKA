@@ -18,6 +18,7 @@ struct FreelancerEFKAApp: App {
                 ContentView()
                     .environment(settings)
                     .preferredColorScheme(settings.themeMode.colorScheme)
+                    .environment(\.locale, settings.appLanguage.locale)
                     .transition(.opacity)
             }
         }

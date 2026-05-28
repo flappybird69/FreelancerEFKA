@@ -11,6 +11,7 @@ struct SettingsView: View {
             return List {
                 headerSection
                 themeSection
+                languageSection
                 notificationSection
                 aboutSection
             }
@@ -99,6 +100,55 @@ struct SettingsView: View {
             }
         } footer: {
             Text("Accent colors stay the same — only backgrounds adapt to light/dark mode.")
+                .font(.caption2)
+        }
+    }
+
+    // MARK: - Language
+    private var languageSection: some View {
+        @Bindable var s = settings
+        return Section {
+            ForEach(AppLanguage.allCases) { lang in
+                Button {
+                    withAnimation(.spring(response: 0.3)) {
+                        s.appLanguage = lang
+                    }
+                } label: {
+                    HStack(spacing: 14) {
+                        ZStack {
+                            Circle()
+                                .fill(settings.appLanguage == lang ? Color.accentPurple : Color(.systemGray5))
+                                .frame(width: 32, height: 32)
+                            Image(systemName: lang.icon)
+                                .font(.caption)
+                                .foregroundColor(settings.appLanguage == lang ? .white : .secondary)
+                        }
+
+                        Text(lang.rawValue)
+                            .font(.body)
+                            .foregroundColor(.primary)
+
+                        Spacer()
+
+                        if settings.appLanguage == lang {
+                            Image(systemName: "checkmark.circle.fill")
+                                .foregroundColor(.accentPurple)
+                        }
+                    }
+                }
+                .buttonStyle(.plain)
+            }
+        } header: {
+            HStack(spacing: 6) {
+                Image(systemName: "globe")
+                    .font(.caption)
+                    .foregroundColor(.accentPurple)
+                Text("Language")
+                    .font(.headline)
+                    .foregroundColor(.primary)
+            }
+        } footer: {
+            Text("Changes the app language. 'System' uses your device language.")
                 .font(.caption2)
         }
     }
